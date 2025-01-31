@@ -1,0 +1,21 @@
+{
+  "name": "scraping-service",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.13.31",
+    "@types/node-cron": "^3.0.11",
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "kafkajs": "^2.2.4",
+    "node-cron": "^3.0.3"
+  }
+}
