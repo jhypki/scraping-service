@@ -30,11 +30,11 @@ export async function storePostId(
 }
 
 /**
- * Delete post IDs older than 1 hour from Redis.
+ * Delete post IDs older than 10 hours from Redis.
  * @param platform - The platform (e.g., reddit, mastodon, twitter).
  */
 export async function deleteOldPostIds(platform: string): Promise<void> {
   const key = redisKeys[`${platform}_posts` as keyof typeof redisKeys];
-  const oneHourAgo = Date.now() - 3600 * 1000;
-  await redis.zremrangebyscore(key, 0, oneHourAgo.toString());
+  const tenHoursAgo = Date.now() - 3600 * 1000 * 10;
+  await redis.zremrangebyscore(key, 0, tenHoursAgo.toString());
 }

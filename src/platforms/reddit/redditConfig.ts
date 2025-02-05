@@ -23,4 +23,12 @@ export const SUBREDDITS = [
     name: "sports",
     cron: "*/60 * * * * *",
   },
+  {
+    name: "economy",
+    cron: "*/60 * * * * *",
+  },
+  {
+    name: "europe",
+    cron: "*/60 * * * * *",
+  },
 ];

@@ -1,5 +1,5 @@
 export const URLS = {
-  REDDIT: process.env.REDDIT_URL || "https://www.reddit.com",
+  REDDIT: process.env.REDDIT_URL || "https://oauth.reddit.com",
   MASTODON: process.env.MASTODON_URL || "https://mastodon.social",
 };
 

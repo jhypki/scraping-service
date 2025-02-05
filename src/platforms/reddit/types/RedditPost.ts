@@ -23,6 +23,7 @@ interface RedditPostData {
   hide_score: boolean;
   name: string;
   quarantine: boolean;
+  body?: string;
   link_flair_text_color: string;
   upvote_ratio: number;
   author_flair_background_color: string | null;
